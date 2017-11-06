@@ -1,2 +1,2 @@
 require = require("@std/esm")(module)
-require('./index.esm.js')
+module.exports = require('./index.esm.js')
