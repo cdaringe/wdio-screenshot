@@ -74,5 +74,9 @@
   },
   "engines": {
     "node": ">=4"
+  },
+  "@std/esm": {
+    "cjs": "true",
+    "esm": "all"
   }
 }
