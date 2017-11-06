@@ -1,3 +1,5 @@
+require('@std/esm')
+
 import saveDocumentScreenshot from './commands/saveDocumentScreenshot';
 import saveElementScreenshot from './commands/saveElementScreenshot';
 import saveViewportScreenshot from './commands/saveViewportScreenshot';

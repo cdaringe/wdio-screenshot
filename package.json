@@ -1,8 +1,8 @@
 {
   "name": "wdio-screenshot",
-  "version": "0.6.0",
+  "version": "1.0.0",
   "description": "Screenshot commands for WebdriverIO",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "files": [
     "*.md",
     "src",
@@ -12,7 +12,7 @@
     "clean-lib": "rimraf lib",
     "clean-tmp": "rimraf .tmp",
     "clean": "npm run clean-lib && npm run clean-tmp",
-    "build": "npm run clean && babel ./src -d lib",
+    "build": "npm run clean && babel ./src -d lib/es5",
     "test": "npm run clean && mocha --compilers js:babel-register --timeout 15000 --recursive test/unit",
     "test:local": "npm run clean && wdio ./test/wdio/wdio.local-conf.js",
     "test:sauce": "npm run clean && wdio ./test/wdio/wdio.sauce-conf.js",
